@@ -4,9 +4,15 @@ namespace Class_test
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Planets planets = new Planets();
+            Console.WriteLine("Welcome Press Enter: ");
+            Console.ReadLine();
+            planets.EarthHomeScreen();
+
         }
+
+        
     }
 }

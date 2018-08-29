@@ -14,6 +14,7 @@ namespace Class_test
             Console.WriteLine("Buy your first good and start your journey!");
             Console.WriteLine("Press [Enter]");
             Console.ReadLine();
+            Console.Clear();
             planets.EarthHomeScreen();
 
         }

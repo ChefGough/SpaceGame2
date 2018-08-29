@@ -5,8 +5,15 @@ using System.Text;
 namespace Class_test
 {
     class Tradingpost
-    {
-        Cargo cargo = new Cargo();
+    {   //Trade goods
+        public static int Oxygen = 0;
+        public static int Nitrogen = 0;
+        public static int Co2 = 0;
+        //Player status
+        public static int bankPlayer = 25;
+        public static int CargoSpace = 1;
+        
+        //Trade screens
         public void UpgradeShop()
         {
             
@@ -72,50 +79,50 @@ namespace Class_test
             Console.WriteLine("To return to Main menu Press: g");
             Console.WriteLine("----------------------Cargo Hold------------------------");
             Console.WriteLine("You currently have in your Cargo Hold: ");
-            Console.WriteLine("Oxygen: " + cargo.Oxygen);
-            Console.WriteLine("Nitrogen: " + cargo.Nitrogen);
-            Console.WriteLine("Co2: " + cargo.Co2);
+            Console.WriteLine("Oxygen: " + Oxygen);
+            Console.WriteLine("Nitrogen: " + Nitrogen);
+            Console.WriteLine("Co2: " + Co2);
             input = Console.ReadLine();
             if (input == "a")
             {
-                if (cargo.bankPlayer < 1)
+                if (bankPlayer < 1)
                 {
                    // EndCreditsMoney();
                 }
-                if (cargo.bankPlayer < 15)
+                if (bankPlayer < 15)
                 {
                     Console.WriteLine("You do not have enough credits");
                     Console.ReadLine();
                 }
-                if (cargo.CargoSpace < 1)
+                if (CargoSpace < 1)
                 {
                     Console.WriteLine("You do not have enough room");
                     Console.ReadLine();
                 }
                 else
                 {
-                    cargo.bankPlayer -= 15;
-                    cargo.CargoSpace -= 1;
-                    cargo.Oxygen += 1;
+                    bankPlayer -= 15;
+                    CargoSpace -= 1;
+                    Oxygen += 1;
                     Console.Clear();
-                    Console.WriteLine("You have bought 1 unit of oxygen you have " + cargo.bankPlayer + " Credits left");
-                    Console.WriteLine("You now have " + cargo.Oxygen + " oxygen in your hold.");
-                    Console.WriteLine("You have " + cargo.CargoSpace + " Cargo space left.");
+                    Console.WriteLine("You have bought 1 unit of oxygen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
                     Console.ReadLine();
                 }
             }
             if (input == "b")
             {
-                if (cargo.bankPlayer < 1)
+                if (bankPlayer < 1)
                 {
                    // EndCreditsMoney();
                 }
-                if (cargo.bankPlayer < 5)
+                if (bankPlayer < 5)
                 {
                     Console.WriteLine("You do not have enough credits");
                     Console.ReadLine();
                 }
-                if (cargo.CargoSpace < 1)
+                if (CargoSpace < 1)
                 {
                     Console.WriteLine("You do not have enough room");
                     Console.ReadLine();
@@ -123,48 +130,48 @@ namespace Class_test
                 else
                 {
 
-                    cargo.bankPlayer -= 5;
-                    cargo.CargoSpace -= 1;
-                    cargo.Nitrogen += 1;
+                    bankPlayer -= 5;
+                    CargoSpace -= 1;
+                    Nitrogen += 1;
                     Console.Clear();
-                    Console.WriteLine("You have bought 1 unit of Nitrogen you have " + cargo.bankPlayer + " Credits left");
-                    Console.WriteLine("You now have " + cargo.Nitrogen + " Nitrogen in your hold.");
-                    Console.WriteLine("You have " + cargo.CargoSpace + " Cargo space left.");
+                    Console.WriteLine("You have bought 1 unit of Nitrogen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
                     Console.ReadLine();
 
                 }
             }
             if (input == "c")
             {
-                if (cargo.bankPlayer < 1)
+                if (bankPlayer < 1)
                 {
                     //EndCreditsMoney();
                 }
-                if (cargo.bankPlayer < 10)
+                if (bankPlayer < 10)
                 {
                     Console.WriteLine("You do not have enough credits");
                     Console.ReadLine();
                 }
-                if (cargo.CargoSpace < 1)
+                if (CargoSpace < 1)
                 {
                     Console.WriteLine("You do not have enough room");
                     Console.ReadLine();
                 }
                 else
                 {
-                    cargo.bankPlayer -= 10;
-                    cargo.CargoSpace -= 1;
-                    cargo.Co2 += 1;
+                    bankPlayer -= 10;
+                    CargoSpace -= 1;
+                    Co2 += 1;
                     Console.Clear();
-                    Console.WriteLine("You have bought 1 unit of Co2 you have " + cargo.bankPlayer + " Credits left");
-                    Console.WriteLine("You now have " + cargo.Co2 + " Co2 in your hold.");
-                    Console.WriteLine("You have " + cargo.CargoSpace + " Cargo space left.");
+                    Console.WriteLine("You have bought 1 unit of Co2 you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
                     Console.ReadLine();
                 }
             }
             if (input == "d")
             {
-                if (cargo.Oxygen < 1)
+                if (Oxygen < 1)
                 {
                     Console.WriteLine("You do not have any to sell");
                     Console.WriteLine("Press Enter");
@@ -174,19 +181,19 @@ namespace Class_test
                 }
                 else
                 {
-                    cargo.bankPlayer += 15;
-                    cargo.CargoSpace += 1;
-                    cargo.Oxygen -= 1;
+                    bankPlayer += 15;
+                    CargoSpace += 1;
+                    Oxygen -= 1;
                     Console.Clear();
-                    Console.WriteLine("You have sold 1 unit of oxygen you have " + cargo.bankPlayer + " Credits");
-                    Console.WriteLine("You now have " + cargo.Oxygen + " oxygen in your hold");
-                    Console.WriteLine("You have " + cargo.CargoSpace + " Cargo space");
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
                     Console.ReadLine();
                 }
             }
             if (input == "e")
             {
-                if (cargo.Nitrogen < 1)
+                if (Nitrogen < 1)
                 {
                     Console.WriteLine("You do not have any to sell");
                     Console.WriteLine("Press Enter");
@@ -196,19 +203,19 @@ namespace Class_test
                 }
                 else
                 {
-                    cargo.bankPlayer += 5;
-                    cargo.CargoSpace += 1;
-                    cargo.Nitrogen -= 1;
+                    bankPlayer += 5;
+                    CargoSpace += 1;
+                    Nitrogen -= 1;
                     Console.Clear();
-                    Console.WriteLine("You have sold 1 unit of oxygen you have " + cargo.bankPlayer + " Credits");
-                    Console.WriteLine("You now have " + cargo.Nitrogen + " Nitrogen in your hold");
-                    Console.WriteLine("You have " + cargo.CargoSpace + " Cargo space");
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
                     Console.ReadLine();
                 }
             }
             if (input == "f")
             {
-                if (cargo.Co2 < 1)
+                if (Co2 < 1)
                 {
                     Console.WriteLine("You do not have any to sell");
                     Console.WriteLine("Press Enter");
@@ -218,13 +225,13 @@ namespace Class_test
                 }
                 else
                 {
-                    cargo.bankPlayer += 10;
-                    cargo.CargoSpace += 1;
-                    cargo.Co2 -= 1;
+                    bankPlayer += 10;
+                    CargoSpace += 1;
+                    Co2 -= 1;
                     Console.Clear();
-                    Console.WriteLine("You have sold 1 unit of Co2 you have " + cargo.bankPlayer + " Credits");
-                    Console.WriteLine("You now have " + cargo.Co2 + " Co2 in your hold");
-                    Console.WriteLine("You have " + cargo.CargoSpace + " Cargo space");
+                    Console.WriteLine("You have sold 1 unit of Co2 you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
                     Console.ReadLine();
                 }
             }
@@ -248,35 +255,35 @@ namespace Class_test
             Console.WriteLine("To return to Main menu Press: g");
             Console.WriteLine("----------------------Cargo Hold------------------------");
             Console.WriteLine("You currently have in your Cargo Hold: ");
-            Console.WriteLine("Oxygen: " + cargo.Oxygen);
-            Console.WriteLine("Nitrogen: " + cargo.Nitrogen);
-            Console.WriteLine("Co2: " + cargo.Co2);
+            Console.WriteLine("Oxygen: " + Oxygen);
+            Console.WriteLine("Nitrogen: " + Nitrogen);
+            Console.WriteLine("Co2: " + Co2);
             input = Console.ReadLine();
             if (input == "a")
             {
-                if (cargo.bankPlayer < 1)
+                if (bankPlayer < 1)
                 {
                     //EndCreditsMoney();
                 }
-                if (cargo.bankPlayer < 20)
+                if (bankPlayer < 20)
                 {
                     Console.WriteLine("You do not have enough credits");
                     Console.ReadLine();
                 }
-                if (cargo.CargoSpace < 1)
+                if (CargoSpace < 1)
                 {
                     Console.WriteLine("You do not have enough room");
                     Console.ReadLine();
                 }
                 else
                 {
-                    cargo.bankPlayer -= 20;
-                    cargo.CargoSpace -= 1;
-                    cargo.Oxygen += 1;
+                    bankPlayer -= 20;
+                    CargoSpace -= 1;
+                    Oxygen += 1;
                     Console.Clear();
-                    Console.WriteLine("You have bought 1 unit of oxygen you have " + cargo.bankPlayer + " Credits left");
-                    Console.WriteLine("You now have " + cargo.Oxygen + " oxygen in your hold.");
-                    Console.WriteLine("You have " + cargo.CargoSpace + " Cargo space left.");
+                    Console.WriteLine("You have bought 1 unit of oxygen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
                     Console.ReadLine();
                 }
             }
@@ -295,9 +302,9 @@ namespace Class_test
             Console.WriteLine("To return to menu Press: g");
             Console.WriteLine("----------------------Cargo Hold------------------------");
             Console.WriteLine("You currently have in your Cargo Hold: ");
-            Console.WriteLine("Oxygen: " + cargo.Oxygen);
-            Console.WriteLine("Nitrogen: " + cargo.Nitrogen);
-            Console.WriteLine("Co2: " + cargo.Co2);
+            Console.WriteLine("Oxygen: " + Oxygen);
+            Console.WriteLine("Nitrogen: " + Nitrogen);
+            Console.WriteLine("Co2: " + Co2);
             input = Console.ReadLine();
         }
 

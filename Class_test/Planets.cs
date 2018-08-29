@@ -76,9 +76,9 @@ namespace Class_test
             Travel travel = new Travel();
             string input = "";
             Console.WriteLine("Welcome to M63");
-            Console.WriteLine("To Enter the Trading post Press: a");
-            Console.WriteLine("To enter the Upgrade shop Press: b");
-            Console.WriteLine("To Travel Press: c");
+            Console.WriteLine("To Enter the Trading post Press: [a]");
+            Console.WriteLine("To enter the Upgrade shop Press: [b]");
+            Console.WriteLine("To Travel Press: [c]");
             input = Console.ReadLine();
             if (input == "a")
             {

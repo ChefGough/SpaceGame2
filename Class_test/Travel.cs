@@ -12,9 +12,9 @@ namespace Class_test
         {
             
             string input = "";
-            Console.WriteLine("To travel to Alpha Centauri Press: a");
-            Console.WriteLine("To travel to m63 Press: b");
-            Console.WriteLine("To return to main menu Press: c");
+            Console.WriteLine("To travel to Alpha Centauri Press: [a]");
+            Console.WriteLine("To travel to m63 Press: [b]");
+            Console.WriteLine("To return to main menu Press: [c]");
             input = Console.ReadLine();
             if (input == "a")
             {
@@ -35,9 +35,9 @@ namespace Class_test
         public void TravelAlphaCentauri()
         {
             string input = "";
-            Console.WriteLine("To travel to Earth Press: a");
-            Console.WriteLine("To travel to m63 Press: b");
-            Console.WriteLine("To return to main menu Press: c");
+            Console.WriteLine("To travel to Earth Press: [a]");
+            Console.WriteLine("To travel to m63 Press: [b]");
+            Console.WriteLine("To return to main menu Press: [c]");
             input = Console.ReadLine();
             if (input == "a")
             {
@@ -58,9 +58,9 @@ namespace Class_test
         public void TravelM63()
         {
             string input = "";
-            Console.WriteLine("To travel to Earth Press: a");
-            Console.WriteLine("To travel to Alpha Centauri Press: b");
-            Console.WriteLine("To return to main menu Press: c");
+            Console.WriteLine("To travel to Earth Press: [a]");
+            Console.WriteLine("To travel to Alpha Centauri Press: [b]");
+            Console.WriteLine("To return to main menu Press: [c]");
             input = Console.ReadLine();
             if (input == "a")
             {

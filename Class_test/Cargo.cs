@@ -4,14 +4,17 @@ using System.Text;
 
 namespace Class_test
 {
-   public class Cargo
+   public  class Cargo
     {
-        public void CargoHold()
-        {
-             int Oxygen = 0;
-             int Nitrogen = 0;
-             int Co2 = 0;
-        }
+            //Trading Elements
+            public int Oxygen = 0;
+            public int Nitrogen = 0;
+            public int Co2 = 0;
+            //Player status
+            public int bankPlayer = 25;
+            public int CargoSpace = 1;
+            public int WarpLevel = 2;
+        
 
     }
 }

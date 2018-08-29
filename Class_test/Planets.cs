@@ -45,9 +45,9 @@ namespace Class_test
             Travel travel = new Travel();
             string input = "";
             Console.WriteLine("Welcome to Alpha Centauri");
-            Console.WriteLine("To Enter the Trading post Press: a");
-            Console.WriteLine("To enter the Upgrade shop Press: b");
-            Console.WriteLine("To Travel Press: c");
+            Console.WriteLine("To Enter the Trading post Press: [a]");
+            Console.WriteLine("To enter the Upgrade shop Press: [b]");
+            Console.WriteLine("To Travel Press: [c]");
             input = Console.ReadLine();
             if (input == "a")
             {
@@ -82,7 +82,8 @@ namespace Class_test
             input = Console.ReadLine();
             if (input == "a")
             {
-                Console.Clear();          
+                Console.Clear();
+                tradingpost.TradeScreenM68();
             }
             if (input == "b")
             {

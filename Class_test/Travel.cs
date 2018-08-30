@@ -95,6 +95,32 @@ namespace Class_test
                 Console.Clear();
                 planets.M63HomeScreen();
             }
+            if (input == "c")
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
+            if (input == "d")
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
+            if (input == "e")
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
+            if (input == "f")
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
+            if (input == "g")
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
+
             else
             {
                 Console.Clear();
@@ -115,15 +141,40 @@ namespace Class_test
             input = Console.ReadLine();
             if (input == "a")
             {
-
                 Console.Clear();
-                planets.EarthHomeScreen();
+                planets.AlphaCentauriScreen();
             }
             if (input == "b")
             {
                 Console.Clear();
-                planets.AlphaCentauriScreen();
+                planets.EarthHomeScreen();
             }
+            if (input == "c")
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
+            if (input == "d")
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
+            if (input == "e")
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
+            if (input == "f")
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
+            if (input == "g")
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
+
             else
             {
                 Console.Clear();

@@ -5,6 +5,15 @@ using System.Text;
 namespace Class_test
 {
     class Tradingpost
+    //-Planets-
+    //Earth
+    //Alpha Centauri
+    //M63
+    //Gilese
+    //Wolf
+    //Ross
+    //Eridani
+    //Virginis
     {   //Trade goods
         public static int Oxygen = 0;
         public static int Nitrogen = 0;
@@ -12,12 +21,13 @@ namespace Class_test
         //Player status
         public static int bankPlayer = 25;
         public static int CargoSpace = 1;
-        
+
         //Trade screens
         public void UpgradeShop()
         {
-            
-                string input = "";
+            WarpDrive warpDrive = new WarpDrive();
+
+            string input = "";
                 Console.WriteLine("To upgrade Warp Drive for 50 Credits Press: [a]");
                 Console.WriteLine("To upgrade Cargo Hold Press: [b]");
                 Console.WriteLine("*** The upgrade shop cannot upgrade unless you cargo hold is empty***");
@@ -25,6 +35,8 @@ namespace Class_test
                 input = Console.ReadLine();
                 if (input == "a")
                 {
+                Console.Clear();
+                warpDrive.WarpUpgrade();
                     /*if (WarpLevel >= 9)
                     {
                         Console.WriteLine("Warp level at maximum");
@@ -449,7 +461,7 @@ namespace Class_test
             }
 
         }
-        public void TradeScreenM68()
+        public void TradeScreenM63()
         {
             Planets planets = new Planets();
             string input = "";
@@ -562,7 +574,7 @@ namespace Class_test
                     Console.WriteLine("Press Enter");
                     Console.ReadLine();
                     Console.Clear();
-                    TradeScreenM68();
+                    TradeScreenM63();
                 }
                 else
                 {
@@ -584,7 +596,7 @@ namespace Class_test
                     Console.WriteLine("Press Enter");
                     Console.ReadLine();
                     Console.Clear();
-                    TradeScreenM68(); 
+                    TradeScreenM63(); 
                     Console.ReadLine();
                 }
                 else
@@ -607,7 +619,7 @@ namespace Class_test
                     Console.WriteLine("Press Enter");
                     Console.ReadLine();
                     Console.Clear();
-                    TradeScreenM68();
+                    TradeScreenM63();
                 }
                 else
                 {
@@ -624,12 +636,30 @@ namespace Class_test
             else
             {
                 Console.Clear();
-                planets.M68HomeScreen();
+                planets.M63HomeScreen();
             }
 
         }
+        public void TradeScreenGilese()
+        {
 
-        
+        }
+        public void TradeScreenWolf()
+        {
+
+        }
+        public void TradeScreenRoss()
+        {
+
+        }
+        public void TradeScreenEridani()
+        {
+
+        }
+        public void TradeScreenVirginis()
+        {
+
+        }
         
     }
 }

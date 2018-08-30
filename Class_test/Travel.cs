@@ -6,6 +6,16 @@ namespace Class_test
 {
     class Travel
     {
+        //-Planets-
+        //Earth
+        //Alpha Centauri
+        //M63
+        //Gilese
+        //Wolf
+        //Ross
+        //Eridani
+        //Virginis
+        
         Planets planets = new Planets();
 
         public void TravelEarth()
@@ -14,7 +24,12 @@ namespace Class_test
             string input = "";
             Console.WriteLine("To travel to Alpha Centauri Press: [a]");
             Console.WriteLine("To travel to m63 Press: [b]");
-            Console.WriteLine("To return to main menu Press: [c]");
+            Console.WriteLine("To travel to Gilese: [c]");
+            Console.WriteLine("To travel to Wolf: [d]");
+            Console.WriteLine("To travel to Ross: [e]");
+            Console.WriteLine("To travel to Eridani [f]");
+            Console.WriteLine("To travel to Virginis [g]");
+            Console.WriteLine("To return to main menu Press: [h]");
             input = Console.ReadLine();
             if (input == "a")
             {
@@ -24,8 +39,9 @@ namespace Class_test
             if (input == "b")
             {
                 Console.Clear();
-                planets.M68HomeScreen();
+                planets.M63HomeScreen();
             }
+            
             else
             {
                 Console.Clear();
@@ -37,7 +53,12 @@ namespace Class_test
             string input = "";
             Console.WriteLine("To travel to Earth Press: [a]");
             Console.WriteLine("To travel to m63 Press: [b]");
-            Console.WriteLine("To return to main menu Press: [c]");
+            Console.WriteLine("To travel to Gilese: [c]");
+            Console.WriteLine("To travel to Wolf: [d]");
+            Console.WriteLine("To travel to Ross: [e]");
+            Console.WriteLine("To travel to Eridani [f]");
+            Console.WriteLine("To travel to Virginis [g]");
+            Console.WriteLine("To return to main menu Press: [h]");
             input = Console.ReadLine();
             if (input == "a")
             {
@@ -47,7 +68,7 @@ namespace Class_test
             if (input == "b")
             {
                 Console.Clear();
-                planets.M68HomeScreen();
+                planets.M63HomeScreen();
             }
             else
             {
@@ -58,9 +79,14 @@ namespace Class_test
         public void TravelM63()
         {
             string input = "";
-            Console.WriteLine("To travel to Earth Press: [a]");
-            Console.WriteLine("To travel to Alpha Centauri Press: [b]");
-            Console.WriteLine("To return to main menu Press: [c]");
+            Console.WriteLine("To travel to Alpha Centauri Press: [a]");
+            Console.WriteLine("To travel to Earth Press: [b]");
+            Console.WriteLine("To travel to Gilese: [c]");
+            Console.WriteLine("To travel to Wolf: [d]");
+            Console.WriteLine("To travel to Ross: [e]");
+            Console.WriteLine("To travel to Eridani [f]");
+            Console.WriteLine("To travel to Virginis [g]");
+            Console.WriteLine("To return to main menu Press: [h]");
             input = Console.ReadLine();
             if (input == "a")
             {
@@ -76,8 +102,73 @@ namespace Class_test
             else
             {
                 Console.Clear();
-                planets.M68HomeScreen();
+                planets.M63HomeScreen();
             }
+        }
+        public void TravelGilese()
+        {
+            string input = "";
+            Console.WriteLine("To travel to Alpha Centauri Press: [a]");
+            Console.WriteLine("To travel to Earth Press: [b]");
+            Console.WriteLine("To travel to M63: [c]");
+            Console.WriteLine("To travel to Wolf: [d]");
+            Console.WriteLine("To travel to Ross: [e]");
+            Console.WriteLine("To travel to Eridani [f]");
+            Console.WriteLine("To travel to Virginis [g]");
+            Console.WriteLine("To return to main menu Press: [h]");
+            input = Console.ReadLine();
+        }
+        public void TravelWolf()
+        {
+            string input = "";
+            Console.WriteLine("To travel to Alpha Centauri Press: [a]");
+            Console.WriteLine("To travel to Earth Press: [b]");
+            Console.WriteLine("To travel to Gilese: [c]");
+            Console.WriteLine("To travel to M63: [d]");
+            Console.WriteLine("To travel to Ross: [e]");
+            Console.WriteLine("To travel to Eridani [f]");
+            Console.WriteLine("To travel to Virginis [g]");
+            Console.WriteLine("To return to main menu Press: [h]");
+            input = Console.ReadLine();
+        }
+        public void TravelRoss()
+        {
+            string input = "";
+            Console.WriteLine("To travel to Alpha Centauri Press: [a]");
+            Console.WriteLine("To travel to Earth Press: [b]");
+            Console.WriteLine("To travel to Gilese: [c]");
+            Console.WriteLine("To travel to Wolf: [d]");
+            Console.WriteLine("To travel to M63: [e]");
+            Console.WriteLine("To travel to Eridani [f]");
+            Console.WriteLine("To travel to Virginis [g]");
+            Console.WriteLine("To return to main menu Press: [h]");
+            input = Console.ReadLine();
+        }
+        public void TravelEridani()
+        {
+            string input = "";
+            Console.WriteLine("To travel to Alpha Centauri Press: [a]");
+            Console.WriteLine("To travel to Earth Press: [b]");
+            Console.WriteLine("To travel to Gilese: [c]");
+            Console.WriteLine("To travel to Wolf: [d]");
+            Console.WriteLine("To travel to Ross: [e]");
+            Console.WriteLine("To travel to M63 [f]");
+            Console.WriteLine("To travel to Virginis [g]");
+            Console.WriteLine("To return to main menu Press: [h]");
+            input = Console.ReadLine();
+        }
+        public void TravelViginis()
+        {
+            string input = "";
+            Console.WriteLine("To travel to Alpha Centauri Press: [a]");
+            Console.WriteLine("To travel to Earth Press: [b]");
+            Console.WriteLine("To travel to Gilese: [c]");
+            Console.WriteLine("To travel to Wolf: [d]");
+            Console.WriteLine("To travel to Ross: [e]");
+            Console.WriteLine("To travel to Eridani [f]");
+            Console.WriteLine("To travel to M63 [g]");
+            Console.WriteLine("To return to main menu Press: [h]");
+            input = Console.ReadLine();
         }
     }
 }

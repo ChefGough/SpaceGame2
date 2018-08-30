@@ -41,7 +41,32 @@ namespace Class_test
                 Console.Clear();
                 planets.M63HomeScreen();
             }
-            
+            if (input == "c")
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
+            if (input == "d")
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
+            if (input == "e")
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
+            if (input == "f")
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
+            if (input == "g")
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
+
             else
             {
                 Console.Clear();
@@ -117,6 +142,47 @@ namespace Class_test
             Console.WriteLine("To travel to Virginis [g]");
             Console.WriteLine("To return to main menu Press: [h]");
             input = Console.ReadLine();
+            if (input == "a")
+            {
+                Console.Clear();
+                planets.AlphaCentauriScreen();
+            }
+            if (input == "b")
+            {
+                Console.Clear();
+                planets.EarthHomeScreen();
+            }
+            if (input == "c")
+            {
+                Console.Clear();
+                planets.M63HomeScreen();
+            }
+            if (input == "d")
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
+            if (input == "e")
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
+            if (input == "f")
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
+            if (input == "g")
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
+
+            else
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
         }
         public void TravelWolf()
         {
@@ -130,6 +196,47 @@ namespace Class_test
             Console.WriteLine("To travel to Virginis [g]");
             Console.WriteLine("To return to main menu Press: [h]");
             input = Console.ReadLine();
+            if (input == "a")
+            {
+                Console.Clear();
+                planets.AlphaCentauriScreen();
+            }
+            if (input == "b")
+            {
+                Console.Clear();
+                planets.EarthHomeScreen();
+            }
+            if (input == "c")
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
+            if (input == "d")
+            {
+                Console.Clear();
+                planets.M63HomeScreen();
+            }
+            if (input == "e")
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
+            if (input == "f")
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
+            if (input == "g")
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
+
+            else
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
         }
         public void TravelRoss()
         {
@@ -143,6 +250,47 @@ namespace Class_test
             Console.WriteLine("To travel to Virginis [g]");
             Console.WriteLine("To return to main menu Press: [h]");
             input = Console.ReadLine();
+            if (input == "a")
+            {
+                Console.Clear();
+                planets.AlphaCentauriScreen();
+            }
+            if (input == "b")
+            {
+                Console.Clear();
+                planets.EarthHomeScreen();
+            }
+            if (input == "c")
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
+            if (input == "d")
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
+            if (input == "e")
+            {
+                Console.Clear();
+                planets.M63HomeScreen();
+            }
+            if (input == "f")
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
+            if (input == "g")
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
+
+            else
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
         }
         public void TravelEridani()
         {
@@ -156,6 +304,47 @@ namespace Class_test
             Console.WriteLine("To travel to Virginis [g]");
             Console.WriteLine("To return to main menu Press: [h]");
             input = Console.ReadLine();
+            if (input == "a")
+            {
+                Console.Clear();
+                planets.AlphaCentauriScreen();
+            }
+            if (input == "b")
+            {
+                Console.Clear();
+                planets.EarthHomeScreen();
+            }
+            if (input == "c")
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
+            if (input == "d")
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
+            if (input == "e")
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
+            if (input == "f")
+            {
+                Console.Clear();
+                planets.M63HomeScreen();
+            }
+            if (input == "g")
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
+
+            else
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
         }
         public void TravelViginis()
         {
@@ -169,6 +358,47 @@ namespace Class_test
             Console.WriteLine("To travel to M63 [g]");
             Console.WriteLine("To return to main menu Press: [h]");
             input = Console.ReadLine();
+            if (input == "a")
+            {
+                Console.Clear();
+                planets.AlphaCentauriScreen();
+            }
+            if (input == "b")
+            {
+                Console.Clear();
+                planets.EarthHomeScreen();
+            }
+            if (input == "c")
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
+            if (input == "d")
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
+            if (input == "e")
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
+            if (input == "f")
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
+            if (input == "g")
+            {
+                Console.Clear();
+                planets.M63HomeScreen();
+            }
+
+            else
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
         }
     }
 }

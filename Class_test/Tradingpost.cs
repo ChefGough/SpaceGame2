@@ -642,23 +642,888 @@ namespace Class_test
         }
         public void TradeScreenGilese()
         {
+            Planets planets = new Planets();
+            string input = "";
+            Console.WriteLine("------------------------BUY----------------------------");
+            Console.WriteLine("To buy Oxygen (25 Credits) press: [a]");
+            Console.WriteLine("To buy Nitrogen (10) press: [b]");
+            Console.WriteLine("To buy Co2 (20) press: [c]");
+            Console.WriteLine("------------------------SELL----------------------------");
+            Console.WriteLine("To sell Oxygen (25 Credits) press: [d]");
+            Console.WriteLine("To sell Nitrogen (10 Credits) press: [e]");
+            Console.WriteLine("To sell Co2(20 Credits) press: [f]");
+            Console.WriteLine("To return to Main menu Press: [g]");
+            Console.WriteLine("----------------------Cargo Hold------------------------");
+            Console.WriteLine("You currently have in your Cargo Hold: ");
+            Console.WriteLine("Oxygen: " + Oxygen);
+            Console.WriteLine("Nitrogen: " + Nitrogen);
+            Console.WriteLine("Co2: " + Co2);
+            input = Console.ReadLine();
+            if (input == "a")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 25)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 25;
+                    CargoSpace -= 1;
+                    Oxygen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of oxygen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "b")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 10)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    bankPlayer -= 10;
+                    CargoSpace -= 1;
+                    Nitrogen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Nitrogen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+
+                }
+            }
+            if (input == "c")
+            {
+                if (bankPlayer < 1)
+                {
+                    //EndCreditsMoney();
+                }
+                if (bankPlayer < 20)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 20;
+                    CargoSpace -= 1;
+                    Co2 += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Co2 you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "d")
+            {
+                if (Oxygen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 25;
+                    CargoSpace += 1;
+                    Oxygen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "e")
+            {
+                if (Nitrogen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 10;
+                    CargoSpace += 1;
+                    Nitrogen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "f")
+            {
+                if (Co2 < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 20;
+                    CargoSpace += 1;
+                    Co2 -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of Co2 you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.Clear();
+                planets.GileseScreen();
+            }
         }
         public void TradeScreenWolf()
         {
+            Planets planets = new Planets();
+            string input = "";
+            Console.WriteLine("------------------------BUY----------------------------");
+            Console.WriteLine("To buy Oxygen (5 Credits) press: [a]");
+            Console.WriteLine("To buy Nitrogen (20 Credits) press: [b]");
+            Console.WriteLine("To buy Co2 (25 Credits) press: [c]");
+            Console.WriteLine("------------------------SELL----------------------------");
+            Console.WriteLine("To sell Oxygen (5 Credits) press: [d]");
+            Console.WriteLine("To sell Nitrogen (20 Credits) press: [e]");
+            Console.WriteLine("To sell Co2(25 Credits) press: [f]");
+            Console.WriteLine("To return to Main menu Press: [g]");
+            Console.WriteLine("----------------------Cargo Hold------------------------");
+            Console.WriteLine("You currently have in your Cargo Hold: ");
+            Console.WriteLine("Oxygen: " + Oxygen);
+            Console.WriteLine("Nitrogen: " + Nitrogen);
+            Console.WriteLine("Co2: " + Co2);
+            input = Console.ReadLine();
+            if (input == "a")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 5)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 5;
+                    CargoSpace -= 1;
+                    Oxygen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of oxygen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "b")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 20)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    bankPlayer -= 20;
+                    CargoSpace -= 1;
+                    Nitrogen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Nitrogen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+
+                }
+            }
+            if (input == "c")
+            {
+                if (bankPlayer < 1)
+                {
+                    //EndCreditsMoney();
+                }
+                if (bankPlayer < 25)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 25;
+                    CargoSpace -= 1;
+                    Co2 += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Co2 you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "d")
+            {
+                if (Oxygen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 5;
+                    CargoSpace += 1;
+                    Oxygen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "e")
+            {
+                if (Nitrogen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 20;
+                    CargoSpace += 1;
+                    Nitrogen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "f")
+            {
+                if (Co2 < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 25;
+                    CargoSpace += 1;
+                    Co2 -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of Co2 you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.Clear();
+                planets.WolfScreen();
+            }
         }
         public void TradeScreenRoss()
         {
+            Planets planets = new Planets();
+            string input = "";
+            Console.WriteLine("------------------------BUY----------------------------");
+            Console.WriteLine("To buy Oxygen (5 Credits) press: [a]");
+            Console.WriteLine("To buy Nitrogen (30) press: [b]");
+            Console.WriteLine("To buy Co2 (5) press: [c]");
+            Console.WriteLine("------------------------SELL----------------------------");
+            Console.WriteLine("To sell Oxygen (15 Credits) press: [d]");
+            Console.WriteLine("To sell Nitrogen (5) press: [e]");
+            Console.WriteLine("To sell Co2(10) press: [f]");
+            Console.WriteLine("To return to Main menu Press: [g]");
+            Console.WriteLine("----------------------Cargo Hold------------------------");
+            Console.WriteLine("You currently have in your Cargo Hold: ");
+            Console.WriteLine("Oxygen: " + Oxygen);
+            Console.WriteLine("Nitrogen: " + Nitrogen);
+            Console.WriteLine("Co2: " + Co2);
+            input = Console.ReadLine();
+            if (input == "a")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 5)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 5;
+                    CargoSpace -= 1;
+                    Oxygen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of oxygen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "b")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 30)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    bankPlayer -= 30;
+                    CargoSpace -= 1;
+                    Nitrogen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Nitrogen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+
+                }
+            }
+            if (input == "c")
+            {
+                if (bankPlayer < 1)
+                {
+                    //EndCreditsMoney();
+                }
+                if (bankPlayer < 5)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 5;
+                    CargoSpace -= 1;
+                    Co2 += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Co2 you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "d")
+            {
+                if (Oxygen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 5;
+                    CargoSpace += 1;
+                    Oxygen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "e")
+            {
+                if (Nitrogen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 30;
+                    CargoSpace += 1;
+                    Nitrogen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "f")
+            {
+                if (Co2 < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 5;
+                    CargoSpace += 1;
+                    Co2 -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of Co2 you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.Clear();
+                planets.RossScreen();
+            }
         }
         public void TradeScreenEridani()
         {
+            Planets planets = new Planets();
+            string input = "";
+            Console.WriteLine("------------------------BUY----------------------------");
+            Console.WriteLine("To buy Oxygen (25 Credits) press: [a]");
+            Console.WriteLine("To buy Nitrogen (45) press: [b]");
+            Console.WriteLine("To buy Co2 (5) press: [c]");
+            Console.WriteLine("------------------------SELL----------------------------");
+            Console.WriteLine("To sell Oxygen (25 Credits) press: [d]");
+            Console.WriteLine("To sell Nitrogen (45) press: [e]");
+            Console.WriteLine("To sell Co2(5) press: [f]");
+            Console.WriteLine("To return to Main menu Press: [g]");
+            Console.WriteLine("----------------------Cargo Hold------------------------");
+            Console.WriteLine("You currently have in your Cargo Hold: ");
+            Console.WriteLine("Oxygen: " + Oxygen);
+            Console.WriteLine("Nitrogen: " + Nitrogen);
+            Console.WriteLine("Co2: " + Co2);
+            input = Console.ReadLine();
+            if (input == "a")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 25)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 25;
+                    CargoSpace -= 1;
+                    Oxygen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of oxygen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "b")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 45)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    bankPlayer -= 45;
+                    CargoSpace -= 1;
+                    Nitrogen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Nitrogen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+
+                }
+            }
+            if (input == "c")
+            {
+                if (bankPlayer < 1)
+                {
+                    //EndCreditsMoney();
+                }
+                if (bankPlayer < 5)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 5;
+                    CargoSpace -= 1;
+                    Co2 += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Co2 you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "d")
+            {
+                if (Oxygen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 25;
+                    CargoSpace += 1;
+                    Oxygen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "e")
+            {
+                if (Nitrogen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 45;
+                    CargoSpace += 1;
+                    Nitrogen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "f")
+            {
+                if (Co2 < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 5;
+                    CargoSpace += 1;
+                    Co2 -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of Co2 you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.Clear();
+                planets.EridaniScreen();
+            }
         }
         public void TradeScreenVirginis()
         {
+            Planets planets = new Planets();
+            string input = "";
+            Console.WriteLine("------------------------BUY----------------------------");
+            Console.WriteLine("To buy Oxygen (35 Credits) press: [a]");
+            Console.WriteLine("To buy Nitrogen (35 Credits) press: [b]");
+            Console.WriteLine("To buy Co2 (40Credits) press: [c]");
+            Console.WriteLine("------------------------SELL----------------------------");
+            Console.WriteLine("To sell Oxygen (35 Credits) press: [d]");
+            Console.WriteLine("To sell Nitrogen (35 Credits) press: [e]");
+            Console.WriteLine("To sell Co2(40 Credits) press: [f]");
+            Console.WriteLine("To return to Main menu Press: [g]");
+            Console.WriteLine("----------------------Cargo Hold------------------------");
+            Console.WriteLine("You currently have in your Cargo Hold: ");
+            Console.WriteLine("Oxygen: " + Oxygen);
+            Console.WriteLine("Nitrogen: " + Nitrogen);
+            Console.WriteLine("Co2: " + Co2);
+            input = Console.ReadLine();
+            if (input == "a")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 35)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 35;
+                    CargoSpace -= 1;
+                    Oxygen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of oxygen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "b")
+            {
+                if (bankPlayer < 1)
+                {
+                    // EndCreditsMoney();
+                }
+                if (bankPlayer < 35)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
 
+                    bankPlayer -= 35;
+                    CargoSpace -= 1;
+                    Nitrogen += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Nitrogen you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+
+                }
+            }
+            if (input == "c")
+            {
+                if (bankPlayer < 1)
+                {
+                    //EndCreditsMoney();
+                }
+                if (bankPlayer < 40)
+                {
+                    Console.WriteLine("You do not have enough credits");
+                    Console.ReadLine();
+                }
+                if (CargoSpace < 1)
+                {
+                    Console.WriteLine("You do not have enough room");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    bankPlayer -= 40;
+                    CargoSpace -= 1;
+                    Co2 += 1;
+                    Console.Clear();
+                    Console.WriteLine("You have bought 1 unit of Co2 you have " + bankPlayer + " Credits left");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold.");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space left.");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "d")
+            {
+                if (Oxygen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 35;
+                    CargoSpace += 1;
+                    Oxygen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Oxygen + " oxygen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "e")
+            {
+                if (Nitrogen < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 35;
+                    CargoSpace += 1;
+                    Nitrogen -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of oxygen you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Nitrogen + " Nitrogen in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            if (input == "f")
+            {
+                if (Co2 < 1)
+                {
+                    Console.WriteLine("You do not have any to sell");
+                    Console.WriteLine("Press Enter");
+                    Console.ReadLine();
+                    Console.Clear();
+                    TradeScreenEarth();
+                }
+                else
+                {
+                    bankPlayer += 40;
+                    CargoSpace += 1;
+                    Co2 -= 1;
+                    Console.Clear();
+                    Console.WriteLine("You have sold 1 unit of Co2 you have " + bankPlayer + " Credits");
+                    Console.WriteLine("You now have " + Co2 + " Co2 in your hold");
+                    Console.WriteLine("You have " + CargoSpace + " Cargo space");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.Clear();
+                planets.VirginisScreen();
+            }
         }
         
     }

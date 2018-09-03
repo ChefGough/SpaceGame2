@@ -165,6 +165,7 @@ namespace Class_test
             if (input == "a")
             {
                 //23 LY
+                warpDrive.M63ToAC();
                 Console.Clear();
                 planets.AlphaCentauriScreen();
             }
@@ -178,30 +179,35 @@ namespace Class_test
             if (input == "c")
             {
                 //17LY
+                warpDrive.M63ToGilese();
                 Console.Clear();
                 planets.GileseScreen();
             }
             if (input == "d")
             {
                 //14LY
+                warpDrive.M63ToWolf();
                 Console.Clear();
                 planets.WolfScreen();
             }
             if (input == "e")
             {
                 //9LY
+                warpDrive.M63ToRoss();
                 Console.Clear();
                 planets.RossScreen();
             }
             if (input == "f")
             {
                 //10LY
+                warpDrive.M63ToEridani();
                 Console.Clear();
                 planets.EridaniScreen();
             }
             if (input == "g")
             {
                 //23 LY
+                warpDrive.M63ToVirginis();
                 Console.Clear();
                 planets.VirginisScreen();
             }
@@ -226,6 +232,7 @@ namespace Class_test
             input = Console.ReadLine();
             if (input == "a")
             {
+                warpDrive.GileseToAC();
                 Console.Clear();
                 planets.AlphaCentauriScreen();
             }
@@ -237,26 +244,31 @@ namespace Class_test
             }
             if (input == "c")
             {
+                warpDrive.GileseToM63();
                 Console.Clear();
                 planets.M63HomeScreen();
             }
             if (input == "d")
             {
+                warpDrive.GileseToWolf();
                 Console.Clear();
                 planets.WolfScreen();
             }
             if (input == "e")
             {
+                warpDrive.GileseToRoss();
                 Console.Clear();
                 planets.RossScreen();
             }
             if (input == "f")
             {
+                warpDrive.GileseToEridani();
                 Console.Clear();
                 planets.EridaniScreen();
             }
             if (input == "g")
             {
+                warpDrive.GileseToVirginis();
                 Console.Clear();
                 planets.VirginisScreen();
             }
@@ -281,6 +293,7 @@ namespace Class_test
             input = Console.ReadLine();
             if (input == "a")
             {
+                warpDrive.WolfToAC();
                 Console.Clear();
                 planets.AlphaCentauriScreen();
             }
@@ -292,26 +305,31 @@ namespace Class_test
             }
             if (input == "c")
             {
+                warpDrive.WolfToGilese();
                 Console.Clear();
                 planets.GileseScreen();
             }
             if (input == "d")
             {
+                warpDrive.WolfToM63();
                 Console.Clear();
                 planets.M63HomeScreen();
             }
             if (input == "e")
             {
+                warpDrive.WolfToRoss();
                 Console.Clear();
                 planets.RossScreen();
             }
             if (input == "f")
             {
+                warpDrive.WolfToEridani();
                 Console.Clear();
                 planets.EridaniScreen();
             }
             if (input == "g")
             {
+                warpDrive.WolfToVirginis();
                 Console.Clear();
                 planets.VirginisScreen();
             }
@@ -336,6 +354,7 @@ namespace Class_test
             input = Console.ReadLine();
             if (input == "a")
             {
+                warpDrive.RossToAC();
                 Console.Clear();
                 planets.AlphaCentauriScreen();
             }
@@ -347,26 +366,31 @@ namespace Class_test
             }
             if (input == "c")
             {
+                warpDrive.RossToGilese();
                 Console.Clear();
                 planets.GileseScreen();
             }
             if (input == "d")
             {
+                warpDrive.RossToWolf();
                 Console.Clear();
                 planets.WolfScreen();
             }
             if (input == "e")
             {
+                warpDrive.RossToM63();
                 Console.Clear();
                 planets.M63HomeScreen();
             }
             if (input == "f")
             {
+                warpDrive.RossToEridani();
                 Console.Clear();
                 planets.EridaniScreen();
             }
             if (input == "g")
             {
+                warpDrive.RossToVirginis();
                 Console.Clear();
                 planets.VirginisScreen();
             }
@@ -391,6 +415,7 @@ namespace Class_test
             input = Console.ReadLine();
             if (input == "a")
             {
+                warpDrive.EridaniToAC();
                 Console.Clear();
                 planets.AlphaCentauriScreen();
             }
@@ -402,26 +427,31 @@ namespace Class_test
             }
             if (input == "c")
             {
+                warpDrive.EridaniToGilese();
                 Console.Clear();
                 planets.GileseScreen();
             }
             if (input == "d")
             {
+                warpDrive.EridaniToWolf();
                 Console.Clear();
                 planets.WolfScreen();
             }
             if (input == "e")
             {
+                warpDrive.EridaniToRoss();
                 Console.Clear();
                 planets.RossScreen();
             }
             if (input == "f")
             {
+                warpDrive.EridaniToM63();
                 Console.Clear();
                 planets.M63HomeScreen();
             }
             if (input == "g")
             {
+                warpDrive.EridaniToVirginis();
                 Console.Clear();
                 planets.VirginisScreen();
             }
@@ -446,6 +476,7 @@ namespace Class_test
             input = Console.ReadLine();
             if (input == "a")
             {
+                warpDrive.VirginisToAC();
                 Console.Clear();
                 planets.AlphaCentauriScreen();
             }
@@ -457,26 +488,31 @@ namespace Class_test
             }
             if (input == "c")
             {
+                warpDrive.VirginisToGilese();
                 Console.Clear();
                 planets.GileseScreen();
             }
             if (input == "d")
             {
+                warpDrive.VirginisToWolf();
                 Console.Clear();
                 planets.WolfScreen();
             }
             if (input == "e")
             {
+                warpDrive.VirginisToRoss();
                 Console.Clear();
                 planets.RossScreen();
             }
             if (input == "f")
             {
+                warpDrive.VirginisToEridani();
                 Console.Clear();
                 planets.EridaniScreen();
             }
             if (input == "g")
             {
+                warpDrive.VirginisToM63();
                 Console.Clear();
                 planets.M63HomeScreen();
             }

@@ -177,27 +177,31 @@ namespace Class_test
             }
             if (input == "c")
             {
-
+                //17LY
                 Console.Clear();
                 planets.GileseScreen();
             }
             if (input == "d")
             {
+                //14LY
                 Console.Clear();
                 planets.WolfScreen();
             }
             if (input == "e")
             {
+                //9LY
                 Console.Clear();
                 planets.RossScreen();
             }
             if (input == "f")
             {
+                //10LY
                 Console.Clear();
                 planets.EridaniScreen();
             }
             if (input == "g")
             {
+                //23 LY
                 Console.Clear();
                 planets.VirginisScreen();
             }

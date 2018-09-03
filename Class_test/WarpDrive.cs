@@ -14,11 +14,13 @@ namespace Class_test
         static int warpLevel = 2;
         static double TimeYears = 0;
 
-        //Earth Warps
+        
         public void WarpUpgrade()
         {
             warpLevel += 1;
         }
+
+        //Earth Warps
         public void EarthToAC()
         {
             double Speed;
@@ -185,6 +187,56 @@ namespace Class_test
             Console.WriteLine("You have traveled a total of: " + time + "Years");
             Console.ReadLine();
         }
+        public void M63ToGilese()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 17.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void M63ToWolf()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 14.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void M63ToRoss()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 9.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void M63ToEridani()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 10.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void M63ToVirginis()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 23.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
 
 
         //Gilese Warps
@@ -204,6 +256,56 @@ namespace Class_test
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 8.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void GileseToM63()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 17.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void GileseToWolf()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 3.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void GileseToRoss()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 8.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void GileseToEridani()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 27.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void GileseToVirginis()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 40.0 / Speed;
             time += TimeYears;
             Console.WriteLine("You have travled for: " + TimeYears + " Years");
             Console.WriteLine("You have traveled a total of: " + time + "Years");
@@ -232,6 +334,56 @@ namespace Class_test
             Console.WriteLine("You have traveled a total of: " + time + "Years");
             Console.ReadLine();
         }
+        public void WolfToM63()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 14.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void WolfToGilese()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 3.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void WolfToRoss()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 5.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void WolfToEridani()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 24.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void WolfToVirginis()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 37.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
 
 
         //Ross Warps 
@@ -250,6 +402,56 @@ namespace Class_test
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 14.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void RossToM63()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 9.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void RossToWolf()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 5.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void RossToGilese()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 8.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void RossToEridani()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 19.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void RossToVirginis()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 32.0 / Speed;
             time += TimeYears;
             Console.WriteLine("You have travled for: " + TimeYears + " Years");
             Console.WriteLine("You have traveled a total of: " + time + "Years");
@@ -277,6 +479,56 @@ namespace Class_test
             Console.WriteLine("You have traveled a total of: " + time + "Years");
             Console.ReadLine();
         }
+        public void EridaniToM63()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 10.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void EridaniToWolf()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 24.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void EridaniToGilese()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 27.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void EridaniToRoss()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 19.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void EridaniToVirginis()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 13.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
 
         //Virginis Warps
         public void VirginisToEarth()
@@ -294,6 +546,56 @@ namespace Class_test
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 46.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void VirginisToM63()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 23.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void VirginisToWolf()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 37.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void VirginisToGilese()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 40.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void VirginisToRoss()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 32.0 / Speed;
+            time += TimeYears;
+            Console.WriteLine("You have travled for: " + TimeYears + " Years");
+            Console.WriteLine("You have traveled a total of: " + time + "Years");
+            Console.ReadLine();
+        }
+        public void VirginisToEridani()
+        {
+            double Speed;
+            Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
+            TimeYears = 13.0 / Speed;
             time += TimeYears;
             Console.WriteLine("You have travled for: " + TimeYears + " Years");
             Console.WriteLine("You have traveled a total of: " + time + "Years");

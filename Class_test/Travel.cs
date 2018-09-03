@@ -81,7 +81,6 @@ namespace Class_test
                 Console.Clear();
                 planets.VirginisScreen();
             }
-
             else
             {
                 Console.Clear();
@@ -110,36 +109,42 @@ namespace Class_test
             if (input == "b")
             {
                 //23 LY
+                warpDrive.ACtoM63();
                 Console.Clear();
                 planets.M63HomeScreen();
             }
             if (input == "c")
             {
                 //8 LY
+                warpDrive.ACtoGelise();
                 Console.Clear();
                 planets.GileseScreen();
             }
             if (input == "d")
             {
                 //11LY
+                warpDrive.ACtoWolf();
                 Console.Clear();
                 planets.WolfScreen();
             }
             if (input == "e")
             {
                 //14 LY
+                warpDrive.ACtoRoss();
                 Console.Clear();
                 planets.RossScreen();
             }
             if (input == "f")
             {
                 //33 LY
+                warpDrive.ACtoEridani();
                 Console.Clear();
                 planets.EridaniScreen();
             }
             if (input == "g")
             {
                 //46 LY
+                warpDrive.ACtoVirginis();
                 Console.Clear();
                 planets.VirginisScreen();
             }

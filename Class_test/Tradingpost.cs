@@ -1525,6 +1525,12 @@ namespace Class_test
                 planets.VirginisScreen();
             }
         }
+
+        public void EndCreditsMoney()
+        {
+            Console.WriteLine("You have Finished with: " + bankPlayer + "Credits");
+        }
+
         
     }
 }

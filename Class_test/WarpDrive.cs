@@ -22,7 +22,14 @@ namespace Class_test
 
         //Earth Warps
         public void EarthToAC()
+            
+            
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 4.0 / Speed;
@@ -33,6 +40,11 @@ namespace Class_test
         }
         public void EarthToM63()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 27.0 / Speed;
@@ -43,6 +55,11 @@ namespace Class_test
         }
         public void EarthToGilese()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 10.0 / Speed;
@@ -53,6 +70,11 @@ namespace Class_test
         }
         public void EarthToWolf()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 13.0 / Speed;
@@ -63,6 +85,11 @@ namespace Class_test
         }
         public void EarthToRoss()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 18.0 / Speed;
@@ -73,6 +100,11 @@ namespace Class_test
         }
         public void EarthToEridani()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 37.0 / Speed;
@@ -83,6 +115,11 @@ namespace Class_test
         }
         public void EarthToVirginis()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 50.0 / Speed;
@@ -96,7 +133,12 @@ namespace Class_test
         public void ACtoEarth()
         
             {
-                double Speed;
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
+            double Speed;
                 Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
                 TimeYears = 4.0 / Speed;
                 time += TimeYears;
@@ -106,6 +148,11 @@ namespace Class_test
             }
         public void ACtoM63()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 23.0 / Speed;
@@ -116,6 +163,11 @@ namespace Class_test
         }
         public void ACtoGelise()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 8.0 / Speed;
@@ -126,6 +178,11 @@ namespace Class_test
         }
         public void ACtoWolf()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 11.0 / Speed;
@@ -136,6 +193,11 @@ namespace Class_test
         }
         public void ACtoRoss()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 14.0 / Speed;
@@ -146,6 +208,11 @@ namespace Class_test
         }
         public void ACtoEridani()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 33.0 / Speed;
@@ -156,6 +223,11 @@ namespace Class_test
         }
         public void ACtoVirginis()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 46.0 / Speed;
@@ -167,9 +239,14 @@ namespace Class_test
 
         //M63 Warps
         public void M63toEarth()
-        
+
+        {
+            if (time >= 40)
             {
-                double Speed;
+                Console.Clear();
+                EndCredits();
+            }
+            double Speed;
                 Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
                 TimeYears = 27.0 / Speed;
                 time += TimeYears;
@@ -179,6 +256,11 @@ namespace Class_test
             }
         public void M63ToAC()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 23.0 / Speed;
@@ -189,6 +271,11 @@ namespace Class_test
         }
         public void M63ToGilese()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 17.0 / Speed;
@@ -199,6 +286,11 @@ namespace Class_test
         }
         public void M63ToWolf()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 14.0 / Speed;
@@ -209,6 +301,11 @@ namespace Class_test
         }
         public void M63ToRoss()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 9.0 / Speed;
@@ -219,6 +316,11 @@ namespace Class_test
         }
         public void M63ToEridani()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 10.0 / Speed;
@@ -229,6 +331,11 @@ namespace Class_test
         }
         public void M63ToVirginis()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 23.0 / Speed;
@@ -241,9 +348,14 @@ namespace Class_test
 
         //Gilese Warps
         public void GileseToEarth()
-        
+
+        {
+            if (time >= 40)
             {
-                double Speed;
+                Console.Clear();
+                EndCredits();
+            }
+            double Speed;
                 Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
                 TimeYears = 10.0 / Speed;
                 time += TimeYears;
@@ -253,6 +365,11 @@ namespace Class_test
             }
         public void GileseToAC()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 8.0 / Speed;
@@ -263,6 +380,11 @@ namespace Class_test
         }
         public void GileseToM63()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 17.0 / Speed;
@@ -273,6 +395,11 @@ namespace Class_test
         }
         public void GileseToWolf()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 3.0 / Speed;
@@ -283,6 +410,11 @@ namespace Class_test
         }
         public void GileseToRoss()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 8.0 / Speed;
@@ -293,6 +425,11 @@ namespace Class_test
         }
         public void GileseToEridani()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 27.0 / Speed;
@@ -303,6 +440,11 @@ namespace Class_test
         }
         public void GileseToVirginis()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 40.0 / Speed;
@@ -314,9 +456,14 @@ namespace Class_test
 
         //Wolf Warps
         public void WolfToEarth()
-        
+
+        {
+            if (time >= 40)
             {
-                double Speed;
+                Console.Clear();
+                EndCredits();
+            }
+            double Speed;
                 Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
                 TimeYears = 13.0 / Speed;
                 time += TimeYears;
@@ -326,6 +473,11 @@ namespace Class_test
             }
         public void WolfToAC()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 11.0 / Speed;
@@ -336,6 +488,11 @@ namespace Class_test
         }
         public void WolfToM63()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 14.0 / Speed;
@@ -346,6 +503,11 @@ namespace Class_test
         }
         public void WolfToGilese()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 3.0 / Speed;
@@ -356,6 +518,11 @@ namespace Class_test
         }
         public void WolfToRoss()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 5.0 / Speed;
@@ -366,6 +533,11 @@ namespace Class_test
         }
         public void WolfToEridani()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 24.0 / Speed;
@@ -376,6 +548,11 @@ namespace Class_test
         }
         public void WolfToVirginis()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 37.0 / Speed;
@@ -389,6 +566,11 @@ namespace Class_test
         //Ross Warps 
         public void RossToEarth()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 18.0 / Speed;
@@ -399,6 +581,11 @@ namespace Class_test
         }
         public void RossToAC()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 14.0 / Speed;
@@ -409,6 +596,11 @@ namespace Class_test
         }
         public void RossToM63()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 9.0 / Speed;
@@ -419,6 +611,11 @@ namespace Class_test
         }
         public void RossToWolf()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 5.0 / Speed;
@@ -429,6 +626,11 @@ namespace Class_test
         }
         public void RossToGilese()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 8.0 / Speed;
@@ -439,6 +641,11 @@ namespace Class_test
         }
         public void RossToEridani()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 19.0 / Speed;
@@ -449,6 +656,11 @@ namespace Class_test
         }
         public void RossToVirginis()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 32.0 / Speed;
@@ -461,6 +673,11 @@ namespace Class_test
         //Eridani Warps
         public void EridaniToEarth()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 37.0 / Speed;
@@ -471,6 +688,11 @@ namespace Class_test
         }
         public void EridaniToAC()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 33.0 / Speed;
@@ -481,6 +703,11 @@ namespace Class_test
         }
         public void EridaniToM63()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 10.0 / Speed;
@@ -491,6 +718,11 @@ namespace Class_test
         }
         public void EridaniToWolf()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 24.0 / Speed;
@@ -501,6 +733,11 @@ namespace Class_test
         }
         public void EridaniToGilese()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 27.0 / Speed;
@@ -511,6 +748,11 @@ namespace Class_test
         }
         public void EridaniToRoss()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 19.0 / Speed;
@@ -521,6 +763,11 @@ namespace Class_test
         }
         public void EridaniToVirginis()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 13.0 / Speed;
@@ -533,6 +780,11 @@ namespace Class_test
         //Virginis Warps
         public void VirginisToEarth()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 50.0 / Speed;
@@ -543,6 +795,11 @@ namespace Class_test
         }
         public void VirginisToAC()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 46.0 / Speed;
@@ -553,6 +810,11 @@ namespace Class_test
         }
         public void VirginisToM63()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 23.0 / Speed;
@@ -563,6 +825,11 @@ namespace Class_test
         }
         public void VirginisToWolf()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 37.0 / Speed;
@@ -573,6 +840,11 @@ namespace Class_test
         }
         public void VirginisToGilese()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 40.0 / Speed;
@@ -583,6 +855,11 @@ namespace Class_test
         }
         public void VirginisToRoss()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 32.0 / Speed;
@@ -593,6 +870,11 @@ namespace Class_test
         }
         public void VirginisToEridani()
         {
+            if (time >= 40)
+            {
+                Console.Clear();
+                EndCredits();
+            }
             double Speed;
             Speed = Math.Pow(warpLevel, (10.0 / 3)) + Math.Pow(10 - warpLevel, (-11 / 3.0));
             TimeYears = 13.0 / Speed;
@@ -601,6 +883,17 @@ namespace Class_test
             Console.WriteLine("You have traveled a total of: " + time + "Years");
             Console.ReadLine();
         }
+        
+            
+       public void EndCredits()
+        {
+            Tradingpost tradingpost = new Tradingpost();
+            tradingpost.EndCreditsMoney();
+            Console.WriteLine("You have traveled for: " + time + " Years");
+        }
+            
+        
+       
 
 
     }

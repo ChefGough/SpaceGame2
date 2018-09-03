@@ -17,7 +17,7 @@ namespace Class_test
         //Virginis
         
         Planets planets = new Planets();
-
+        WarpDrive warpDrive = new WarpDrive();
         public void TravelEarth()
         {
             
@@ -33,8 +33,10 @@ namespace Class_test
             input = Console.ReadLine();
             if (input == "a")
             {
+                warpDrive.EarthToAC();
                 Console.Clear();
                 planets.AlphaCentauriScreen();
+                
             }
             if (input == "b")
             {
